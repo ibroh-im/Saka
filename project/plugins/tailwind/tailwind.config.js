@@ -14,20 +14,28 @@ tailwind.config = {
     },
     container: {
       padding: {
-        DEFAULT: '0.7rem',
-        sm: '0.9rem',
-        lg: '3rem',
-        xl: '3.2rem'
+        DEFAULT: '0.5rem',
+        sm: '0.7rem',
+        lg: '0.9rem',
+        xl: '1rem',
       },
       center: 'true',
     },
-    
+    screens: {
+      'xs': '480px', 
+      'sm': '640px', 
+      'md': '768px', 
+      'lg': '1024px', 
+      'xl': '1280px', 
+      '2xl': '1536px', 
+    },
       colors: {
         white: '#ffffff',
         currentBlue: '#19242F',
         gold: '#DBC08D',
         lightBlue: '#19242F',
-        
     },
   },
 };
+
+
