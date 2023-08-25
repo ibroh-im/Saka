@@ -24,6 +24,10 @@ tailwind.config = {
     
       colors: {
         white: '#ffffff',
+        currentBlue: '#19242F',
+        gold: '#DBC08D',
+        lightBlue: '#19242F',
+        
     },
   },
 };
