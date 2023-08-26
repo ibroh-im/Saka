@@ -71,3 +71,15 @@
   font-family: 'Montserrat-Black';
   font-weight: 900;
 }
+
+/* ibrohim */
+.bg-liner{
+  background: linear-gradient(338deg, rgba(255, 255, 255, 0.02) 0%, rgba(25, 36, 47, 0.00) 100%), #19242F;
+
+}
+.input-bg{
+  background: rgba(255, 255, 255, 0.05);
+}
+.lightGray{
+  color: rgba(25, 36, 47, 0.50)
+}

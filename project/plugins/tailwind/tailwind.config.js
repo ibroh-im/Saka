@@ -14,10 +14,10 @@ tailwind.config = {
     },
     container: {
       padding: {
-        DEFAULT: '0.5rem',
-        sm: '0.7rem',
-        lg: '0.9rem',
-        xl: '1rem',
+        DEFAULT: '0.7rem',
+        sm: '0.9rem',
+        lg: '1rem',
+        xl: '1.1rem',
       },
       center: 'true',
     },
