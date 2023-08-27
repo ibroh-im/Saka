@@ -108,3 +108,6 @@ button.active {
   font-family: 'Montserrat-Semibold';
   font-weight: 600;
 }
+.index-header-bg{
+  background: url(../images/index-header-bg.png);
+}
