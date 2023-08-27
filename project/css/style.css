@@ -83,3 +83,19 @@
 .lightGray{
   color: rgba(25, 36, 47, 0.50)
 }
+
+
+.content {
+  display: none;
+  padding: 10px 20px;
+}
+
+.content.active {
+  display: block;
+}
+button.active {
+  background-color:black;
+  color: white;
+  font-family: 'Montserrat-Semibold';
+  font-weight: 600;
+}
