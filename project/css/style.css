@@ -71,6 +71,15 @@
   font-family: 'Montserrat-Black';  
   font-weight: 900;
 }
+*{
+  scroll-behavior: smooth;
+}
+.hide-dropdown{
+  display: none;
+}
+.show-dropdown{
+  display: block;
+}
 
 /* ibrohim */
 .bg-liner{
@@ -81,7 +90,7 @@
   background: rgba(255, 255, 255, 0.05);
 }
 .lightGray{
-  color: rgba(25, 36, 47, 0.50)
+  color: rgba(13, 34, 55, 0.5)
 }
 
 

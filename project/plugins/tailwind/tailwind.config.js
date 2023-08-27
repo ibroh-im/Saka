@@ -2,6 +2,9 @@ tailwind.config = {
   darkMode:'class',
   theme: {
     extend: {
+      lineHeight: {
+        '13': '133.4%',
+      },
       dropShadow: {
         '3xl': '0px 10px 22px 0px rgba(147, 117, 81, 1)',
         '2xl': '1px 2px 4px 0px rgba(112, 192, 91, 0.20)',
@@ -17,7 +20,7 @@ tailwind.config = {
         DEFAULT: '0.7rem',
         sm: '0.9rem',
         lg: '1rem',
-        xl: '1.1rem',
+        xl: '5rem',
       },
       center: 'true',
     },

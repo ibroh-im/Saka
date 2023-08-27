@@ -1,20 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./project/css/style.css">
-    <link rel="stylesheet" href="./project/plugins/tailwind/tailwind.config.js">
-    <link rel="stylesheet" href="./project/plugins/tailwind/tailwind.js">
-    <link rel="stylesheet" href="./project/plugins/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./project/plugins/icons/remixicon.css">
-</head>
-<body>
-    
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./project/css/style.css" />
+  <link rel="stylesheet"href="./project/plugins/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./project/plugins/icons/remixicon.css" />
+  <script src="./project/plugins/tailwind/tailwind.js"></script>
+  <script src="./project/plugins/tailwind/tailwind.config.js"></script>
+  <title>О компании</title>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav class="relative z-10">
+    <div class="bg-currentBlue py-5 ">
+     <div class="container">
+      <div class="flex justify-between items-center text-white">
+         <div class="flex items-center gap-4 sm:gap-5">
+            <a href="#" title="Logo" class="w-[70px] h-9 xs:w-[86px] xs:h-[46px] sm:w-[120px] sm:h-[64px] block"><img src="./project/images/Navbar/Saka logo.png" alt="Logo" class="w-full h-full shrink-0"></a>
+            <div class="flex gap-[7px] items-center">
+               <a href="#" title="Saka" class="w-[34px] h-[34px] sm:w-[48px] sm:h-[48px] block"><img src="./project/images/Navbar/Saka circle logo (3).png" alt="Saka" class="w-full h-full shrink-0"></a>
+               <a href="#" title="Eros" class="w-[34px] h-[34px] sm:w-[48px] sm:h-[48px] block"><img src="./project/images/Navbar/Saka circle logo (2).png" alt="Eros" class="w-full h-full shrink-0"></a>
+               <a href="#" title="Tor Tex" class="w-[34px] h-[34px] sm:w-[48px] sm:h-[48px] block"><img src="./project/images/Navbar/Saka circle logo (3).png" alt="Tor Tex" class="w-full h-full shrink-0"></a>
+            </div>
+            <p class="montserrat-light text-xs hidden lg:block max-w-[200px] xl:ml-8 ">Производитель турецкого трикотажного полотна</p>
+         </div>
+         <div class="items-center hidden lg:flex">
+            <a href="#" title="Cart" class="w-10 h-10 rounded-full flex justify-center items-center bg-[#FFFFFF0D] relative cursor-pointer">
+               <img src="./project/images/Navbar/ShoppingCart.png" alt="Shopping Cart" class="w-5 h-5 shrink-0 text-white">
+               <div class="px-1 rounded-full bg-[#BFA470] text-[10px] shrink-0 montserrat-medium leading-13 tracking-[.2px] absolute -top-[2px] -right-[2px]">3</div>
+            </a>
+            <a href="#" class="flex items-center gap-2.5 mx-7 xl:mr-9 xl:ml-8">
+               <img src="./project/images/Navbar/User.png" alt="User Icon" class="w-4 h-4 shrink-0">
+               <span class="text-xs montserrat-semibold leading-13 tracking-[.24px]">Войти</span>
+            </a>
+            <div class="relative mr-6 xl:mr-[48px]">
+               <a href="tel:902125470826" class="flex items-center ">
+                  <img src="./project/images/Navbar/PhoneCall.png" alt="Phone Call" class="w-6 h-6 shrink-0 mr-1">
+                  <span class="text-xl montserrat-semibold leading-13 tracking-[.4px]">+90 212 547 08 26</span>
+               </a>
+               <a href="#" class="text-xs montserrat-light underline leading-13 tracking-[.24px] shrink-0 absolute right-0 -bottom-3">Заказать звонок</a>
+            </div>
+            <div class="text-xs montserrat-medium leading-13 tracking-[.24px] text-[#ffffff40]">
+               <span class="text-white">RU </span>/
+               <span class="">EN</span>
+            </div>
+         </div>
+         <div title="Menu" class="burger-btn w-8 h-8 lg:hidden block cursor-pointer"><img src="./project/images/Navbar/Burger nav.png" alt="Menu" class="w-full h-full shrink-0"></div>
+      </div>
+     </div>
+    </div>
+    <div class="bg-lightBlue py-6 opacity-95 hidden lg:block ">
+      <div class="container">
+         <div class="flex justify-between items-center text-white ">
+            <a href="./index.html" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Главная</a>
+            <div class="flex gap-2.5 items-center">
+               <a href="./catalog.html" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Каталог</a>
+               <button class="" id="nav-dropdown">
+                  <i class="ri-arrow-down-s-line text-lg open-dropdown"></i>
+                  <i class="ri-arrow-up-s-line text-lg close-dropdown hide-dropdown"></i></button>
+            </div>
+            <a href="./About-us.html" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">О компании</a>
+            <a href="./news.html" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Новости</a>
+            <a href="./paymet-delivery.html" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Доставка и оплата</a>
+            <a href="./contact.html" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Контакты</a>
+         </div>
+      </div>
+    </div>
+    <div class="absolute w-[250px] left-[14%] top-[190px] hide-dropdown shadow-3xl" id="dropdown-content">
+      <div class=" p-4 bg-currentBlue text-white rounded-lg  flex flex-col gap-5 border-4 border-[#091f3299] ">
+         <a href="#" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Links</a>
+         <a href="#" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Links</a>
+         <a href="#" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Links</a>
+       </div>
+    </div>
+    <div class="">
+      <div c>
 
+      </div>
+    </div>
+   </nav>
+   <section class="py-40"></section>
+  </div>
+  <script src="./project/plugins/swiper/swiper-bundle.min.js"></script>
+  <script>
+   const dropdownNav = document.querySelector('#nav-dropdown'), 
+         dropdownContent = document.querySelector('#dropdown-content'),
+         openDropdownIcon = document.querySelector('.open-dropdown'),
+         closeDropdownIcon = document.querySelector('.close-dropdown')
+   
+   function navDropdown () {
+      dropdownNav.addEventListener('mouseover', () =>{
+         dropdownContent.classList.toggle('show-dropdown')
+         openDropdownIcon.classList.toggle('hide-dropdown')
+         closeDropdownIcon.classList.toggle('show-dropdown')
+      })
+   }
+   navDropdown()
+  </script>
 
-    <script src="./project/plugins/swiper/swiper-bundle.min.js"></script>
-</body>
+ </body>
 </html>
