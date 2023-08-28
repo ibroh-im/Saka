@@ -10,6 +10,16 @@
   <script src="./project/plugins/tailwind/tailwind.js"></script>
   <script src="./project/plugins/tailwind/tailwind.config.js"></script>
   <title>О компании</title>
+  <style>
+   .about-swipper .swiper-button-disabled{
+      background-color: #F8F8F8 !important;
+      color: #19242F !important;
+      opacity: 100 !important;
+   }
+   .about-swipper .swiper-slide{
+      height: auto !important;
+   }
+  </style>
  </head>
  <body>
   <div class="wrapper">
@@ -184,9 +194,227 @@
       </div>
     </div>
    </nav>
-   <section class="py-40"></section>
+   <section class="py-[50px] sm:py-[60px] bg-white text-currentBlue relative">
+      <div class="container">
+         <div class="Breadcrumb montserrat-normal leading-[151.4%] tracking-[2.64px] text-xs uppercase flex flex-wrap gap-x-5 gap-y-1 text-[#18272e40]">
+            <a href="./index.html">ГЛАВНАЯ</a>
+            <span>></span>
+            <a href="./About-us.html" class="text-currentBlue">О КОМПАНИИ</a>
+         </div>
+         <h1 class="mt-[22px] montserrat-semibold text-[32px] leading-13 tracking-[0.64px] mb-5 sm:mb-7 xl:mb-10">О компании</h1>
+         <div class="flex flex-col sm:flex-row w-full gap-x-5 gap-y-10 items-center lg:gap-20 xl:gap-[100px]">
+            <div class="w-full sm:w-1/2 lg:w-[40%] h-[350px] sm:h-[550px] lg:h-[600px] xl:h-[640px]"></div>
+            <div class="w-full sm:w-1/2 lg:w-[60%]">
+               <h1 class="text-xl leading-13 montserrat-semibold tracking-[.4px] lg:text-[26px] lg:tracking-[.52px] mb-4 lg:mb-5">Saka Tekstil - производство и продажа турецкого трикотажного полотна</h1>
+               <p class="montserrat-normal leading-15 text-sm tracking-[.28px] xl:text-[18px] lg:tracking-[.36px] mb-4">Мы осуществляем продажу ткани от рулона и нарезку кашкорсе от 5%-20%</p>
+               <p class="montserrat-normal leading-15 text-sm tracking-[.28px] xl:text-[18px] lg:tracking-[.36px] mb-4">Наша команда следит за трендами в мире трикотажа, мы постоянно обновляем наш ассортимент и регулярно контролируем наличие ткани на складе</p>
+               <p class="montserrat-normal leading-15 text-sm tracking-[.28px] xl:text-[18px] lg:tracking-[.36px] sm:pb-11 lg:pb-0">Мы предлагаем клиентам различные виды трикотажных полотен высокого качества более, чем в 45 цветовых вариациях</p>
+               <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-5 sm:absolute sm:w-[90%] right-[5%] z-10 -bottom-6 lg:static lg:w-full lg:mt-14">
+                  <div>
+                     <div class="w-[180px] h-[180px] rounded-full bg-currentGray flex items-center justify-center flex-col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path d="M21.75 10.3798L19.905 18.5323C19.8684 18.7029 19.7735 18.8554 19.6366 18.9635C19.4997 19.0717 19.3294 19.1287 19.155 19.1248H4.78499C4.61058 19.1287 4.44028 19.0717 4.30339 18.9635C4.1665 18.8554 4.07159 18.7029 4.03499 18.5323L2.24999 10.3798C2.21995 10.2421 2.22935 10.0987 2.27711 9.966C2.32486 9.83334 2.40904 9.71684 2.51999 9.62984C2.63125 9.54253 2.76492 9.48846 2.90559 9.47387C3.04626 9.45927 3.18818 9.48474 3.31499 9.54734L7.69499 11.6698L11.325 5.24984C11.3904 5.13442 11.4853 5.03841 11.5999 4.97162C11.7145 4.90482 11.8448 4.86963 11.9775 4.86963C12.1102 4.86963 12.2405 4.90482 12.3551 4.97162C12.4697 5.03841 12.5646 5.13442 12.63 5.24984L16.26 11.6773L20.67 9.53984C20.7977 9.47214 20.9423 9.44279 21.0863 9.45532C21.2303 9.46785 21.3676 9.52173 21.4817 9.61048C21.5958 9.69923 21.6819 9.81906 21.7294 9.95555C21.777 10.092 21.7842 10.2394 21.75 10.3798Z" fill="#DBC08D"/>
+                         </svg>
+                         <p class="montserrat-semibold text-[#BFA470] text-[42px] leading-13 text-center tracking-[.84px] -mt-1">30</p>
+                         <p class="text-center montserrat-medium text-sm leading-[130.9%] tracking-[0.28px] max-w-[150px]">Лет на рынке текстиля</p>
+                     </div>
+                  </div>
+                  <div class="flex items-end flex-col sm:items-start">
+                     <div class="w-[180px] h-[180px] rounded-full bg-currentGray flex items-center justify-center flex-col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path d="M21.75 10.3798L19.905 18.5323C19.8684 18.7029 19.7735 18.8554 19.6366 18.9635C19.4997 19.0717 19.3294 19.1287 19.155 19.1248H4.78499C4.61058 19.1287 4.44028 19.0717 4.30339 18.9635C4.1665 18.8554 4.07159 18.7029 4.03499 18.5323L2.24999 10.3798C2.21995 10.2421 2.22935 10.0987 2.27711 9.966C2.32486 9.83334 2.40904 9.71684 2.51999 9.62984C2.63125 9.54253 2.76492 9.48846 2.90559 9.47387C3.04626 9.45927 3.18818 9.48474 3.31499 9.54734L7.69499 11.6698L11.325 5.24984C11.3904 5.13442 11.4853 5.03841 11.5999 4.97162C11.7145 4.90482 11.8448 4.86963 11.9775 4.86963C12.1102 4.86963 12.2405 4.90482 12.3551 4.97162C12.4697 5.03841 12.5646 5.13442 12.63 5.24984L16.26 11.6773L20.67 9.53984C20.7977 9.47214 20.9423 9.44279 21.0863 9.45532C21.2303 9.46785 21.3676 9.52173 21.4817 9.61048C21.5958 9.69923 21.6819 9.81906 21.7294 9.95555C21.777 10.092 21.7842 10.2394 21.75 10.3798Z" fill="#DBC08D"/>
+                         </svg>
+                         <p class="montserrat-semibold text-[#BFA470] text-[42px] leading-13 text-center tracking-[.84px] -mt-1">40+</p>
+                         <p class="text-center montserrat-medium text-sm leading-[130.9%] tracking-[0.28px] max-w-[100px]">Ассортимент товаров в наличии</p>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="w-[180px] h-[180px] rounded-full bg-currentGray flex items-center justify-center flex-col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path d="M21.75 10.3798L19.905 18.5323C19.8684 18.7029 19.7735 18.8554 19.6366 18.9635C19.4997 19.0717 19.3294 19.1287 19.155 19.1248H4.78499C4.61058 19.1287 4.44028 19.0717 4.30339 18.9635C4.1665 18.8554 4.07159 18.7029 4.03499 18.5323L2.24999 10.3798C2.21995 10.2421 2.22935 10.0987 2.27711 9.966C2.32486 9.83334 2.40904 9.71684 2.51999 9.62984C2.63125 9.54253 2.76492 9.48846 2.90559 9.47387C3.04626 9.45927 3.18818 9.48474 3.31499 9.54734L7.69499 11.6698L11.325 5.24984C11.3904 5.13442 11.4853 5.03841 11.5999 4.97162C11.7145 4.90482 11.8448 4.86963 11.9775 4.86963C12.1102 4.86963 12.2405 4.90482 12.3551 4.97162C12.4697 5.03841 12.5646 5.13442 12.63 5.24984L16.26 11.6773L20.67 9.53984C20.7977 9.47214 20.9423 9.44279 21.0863 9.45532C21.2303 9.46785 21.3676 9.52173 21.4817 9.61048C21.5958 9.69923 21.6819 9.81906 21.7294 9.95555C21.777 10.092 21.7842 10.2394 21.75 10.3798Z" fill="#DBC08D"/>
+                         </svg>
+                         <p class="montserrat-semibold text-[#BFA470] text-[32px] leading-13 text-center tracking-[.84px] -mt-1">10 000+</p>
+                         <p class="text-center montserrat-medium text-sm leading-[130.9%] tracking-[0.28px] max-w-[150px]">Клиентов выбирают нашу компанию</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <img src="./project/images/About-us/Info Us.png" alt="Info Us Image" class="absolute top-40 w-[90%] h-[350px] object-cover rounded-e-2xl z-[5] sm:w-1/2 sm:h-[550px] lg:w-[40%] lg:top-[180px] sm:top-[168px] lg:h-[600px] xl:w-[520px] xl:h-[640px] left-0">
+      <img src="/project/images/About-us/Info us bg.svg" alt="About Us" class="absolute top-1/2 right-0 z-[4] w-full object-contain lg:w-[70%]">
+   </section>
+   <section class="mt-[60px] pb-10 xl:pb-20">
+      <div class="container">
+         <div class="">
+            <h1 class="text-xl leading-13 montserrat-semibold tracking-[.4px] mb-5 sm:mb-[30px] lg:mb-8 lg:text-[22px] lg:tracking-[.44px] max-w-[500px]">Saka Tekstil работает с трикотажными полотнами разного качества:</h1>
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10 xl:gap-x-10">
+               <div class="flex flex-col items-center sm:items-start">
+                  <img src="./project/images/About-us/Knitted image (3).png" alt="Knitted Image" class="w-[300px] h-[170px] object-cover rounded-2xl xl:w-[360px] mb-5">
+                  <div class="montserrat-normal text-sm leading-15 tracking-[.28px]">
+                     <h1 class="montserrat-semibold mb-1">Open end</h1>
+                     <p>Бюджетный трикотаж, имеет ворсистую и шероховатую поверхность из-за коротких волокон.</p>
+                  </div>
+               </div>
+               <div class="flex flex-col items-center sm:items-start">
+                  <img src="./project/images/About-us/Knitted image (2).png" alt="Knitted Image" class="w-[300px] h-[170px] object-cover rounded-2xl xl:w-[360px] mb-5">
+                  <div class="montserrat-normal text-sm leading-15 tracking-[.28px]">
+                     <h1 class="montserrat-semibold mb-1">Пенье компакт</h1>
+                     <p> Высшее качество трикотажной ткани, имееют гладкую поверхность без ворсинок </p>
+                  </div>
+               </div>
+               <div class="flex flex-col items-center sm:items-start">
+                  <img src="./project/images/About-us/Knitted image (1).png" alt="Knitted Image" class="w-[300px] h-[170px] object-cover rounded-2xl xl:w-[360px] mb-5">
+                  <div class="montserrat-normal text-sm leading-15 tracking-[.28px]">
+                     <h1 class="montserrat-semibold mb-1">Пенье компакт Плюс-EXCLUSIVE</h1>
+                     <p>  полотно вяжется американскими нитками  и окрашено немецкими красками высшего качества</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
+   <section class="pt-[60px] sm:pt-20 lg:pt-[100px] pb-[140px] sm:pb-[300px] lg:pb-[120px] bg-currentGray text-currentBlue relative">
+      <div class="container">
+         <h1 class="text-xl leading-13 montserrat-semibold tracking-[.4px] lg:text-[26px] lg:tracking-[.52px] max-w-[860px] mb-[50px] sm:mb-[30px] lg:mb-10">Наша главная задача - не просто предоставить качественную ткань, но и оказать каждому заказчику высокий уровень клиентского сервиса</h1>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 xl:gap-x-10 xl:gap-y-[30px] relative z-[5]">
+            <div class="bg-white rounded-2xl flex flex-col items-center p-5 justify-between xl:py-10">
+               <img src="./project/images/About-us/Stats Icon (1).png" alt="Stats Icon" class="w-[64px] h-[64px] object-contain mb-2.5">
+               <div class="flex flex-col items-center">
+                  <h1 class="montserrat-bold mb-5 leading-15 tracking-[1.12px] text-center">ЛОГИСТИКА</h1>
+                  <p class="montserrat-normal text-sm leading-15 tracking-[.28px] text-center">Весь ассортимент в наличии на складе в Москве. Вам не потребуется тратить свои ресурсы на доставку ткани из Турции.</p>
+               </div>
+            </div>
+            <div class="bg-white rounded-2xl flex flex-col items-center p-5 justify-between xl:py-10">
+               <img src="./project/images/About-us/Stats Icon (2).png" alt="Stats Icon" class="w-[64px] h-[64px] object-contain mb-2.5">
+               <div class="flex flex-col items-center">
+                  <h1 class="montserrat-bold mb-5 leading-15 tracking-[1.12px] text-center">ПРОИЗВОДСТВО</h1>
+                  <p class="montserrat-normal text-sm leading-15 tracking-[.28px] text-center">Регулярное наличие ткани позволяет не останавливать процесс вашего производства и минимизирует финансовые потери.</p>
+               </div>
+            </div>
+            <div class="bg-white rounded-2xl flex flex-col items-center p-5 justify-between xl:py-10">
+               <img src="./project/images/About-us/Stats Icon (3).png" alt="Stats Icon" class="w-[64px] h-[64px] object-contain mb-2.5">
+               <div class="flex flex-col items-center">
+                  <h1 class="montserrat-bold mb-5 leading-15 tracking-[1.12px] text-center">ДОПОЛНИТЕЛЬНЫЕ МАТЕРИАЛЫ</h1>
+                  <p class="montserrat-normal text-sm leading-15 tracking-[.28px] text-center">Вместе с товаром мы предоставляем полиэтиленовую упаковку, бесплатную загрузку товара со склада и бесплатные образцы.</p>
+               </div>
+            </div>
+            <div class="bg-white rounded-2xl flex flex-col items-center p-5 justify-between xl:py-10">
+               <img src="./project/images/About-us/Stats Icon (4).png" alt="Stats Icon" class="w-[64px] h-[64px] object-contain mb-2.5">
+               <div class="flex flex-col items-center">
+                  <h1 class="montserrat-bold mb-5 leading-15 tracking-[1.12px] text-center">ЛОЯЛЬНОСТЬ</h1>
+                  <p class="montserrat-normal text-sm leading-15 tracking-[.28px] text-center">Наш трикотаж закупают известные бренды. Это позволит вам создать собственный качественный бренд одежды.</p>
+               </div>
+            </div>
+            <div class="bg-white rounded-2xl flex flex-col items-center p-5 justify-between xl:py-10">
+               <img src="./project/images/About-us/Stats Icon (5).png" alt="Stats Icon" class="w-[64px] h-[64px] object-contain mb-2.5">
+               <div class="flex flex-col items-center">
+                  <h1 class="montserrat-bold mb-5 leading-15 tracking-[1.12px] text-center">УНИКАЛЬНОСТЬ</h1>
+                  <p class="montserrat-normal text-sm leading-15 tracking-[.28px] text-center">Мы предоставляем клиентам широкую палитру цветов, что позволяет создавать уникальные коллекции одежды.</p>
+               </div>
+            </div>
+            <div class="bg-white rounded-2xl flex flex-col items-center p-5 justify-between xl:py-10">
+               <img src="./project/images/About-us/Stats Icon (6).png" alt="Stats Icon" class="w-[64px] h-[64px] object-contain mb-2.5">
+               <div class="flex flex-col items-center">
+                  <h1 class="montserrat-bold mb-5 leading-15 tracking-[1.12px] text-center">КАЧЕСТВО</h1>
+                  <p class="montserrat-normal text-sm leading-15 tracking-[.28px] text-center">Наша ткань обрабатывается специальным силиконовым составом, что позволяет ей не терять свои свойства с течением времени.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <img src="./project/images/About-us/Cloth bg.png" alt="Cloth Bg" class="absolute bottom-16 right-0 z-[4] w-full object-contain lg:w-[77%] lg:bottom-[230px] xl:w-[75%] xl:bottom-[200px]">
+   </section>
+   <section class="py-[70px] sm:py-[100px] bg-white lg:py-[120px] about-swipper">
+      <div class="container">
+         <div class="flex items-center justify-between">
+            <h1 class="text-xl leading-13 montserrat-semibold tracking-[.4px] lg:text-[26px] lg:tracking-[.52px] max-w-[640px]">Делаем все для того, чтобы вы остались довольны нашей тканью</h1>
+            <div class="flex gap-2.5">
+               <div class="swiper-button-prev swiper-left static w-[60px] h-[60px] flex justify-center items-center after:hidden bg-[#DBC08D] rounded-2xl text-white duration-500"><i class="ri-arrow-left-line text-2xl"></i></div>
+               <div class="swiper-button-next swiper-right static w-[60px] h-[60px] flex justify-center items-center after:hidden bg-[#DBC08D] rounded-2xl text-white duration-500"><i class="ri-arrow-right-line text-2xl"></i></div>
+            </div>
+         </div>
+         <div class="mt-8">
+            <div class="swiper mySwiper">
+               <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                  <div class="min-[340px]:p-5 flex flex-col justify-between h-full p-2 rounded-2xl bg-currentGray xs:p-7">
+                     <p class="text-xs montserrat-normal leading-[164.9%] tracking-[.24px] pb-3.5 ">Повседневная практика показывает, что современная методология разработки способствует повышению качества благоприятных перспектив. Наше дело не так однозначно, как может показаться: высокое качество позиционных исследований не даёт нам иного выбора, кроме определения глубокомысленных рассуждений. Являясь всего лишь частью общей картины, акционеры крупнейших компаний, превозмогая сложившуюся непростую экономическую ситуацию, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
+                     <a href="#" class="leading-[164.9%] montserrat-semibold tracking-[.32px]">Наталья</a>
+                  </div>
+                 </div>
+                 <div class="swiper-slide">
+                  <div class="min-[340px]:p-5 flex flex-col justify-between h-full p-2 rounded-2xl bg-currentGray xs:p-7">
+                     <p class="text-xs montserrat-normal leading-[164.9%] tracking-[.24px] pb-3.5 ">Повседневная практика показывает, что современная методология разработки способствует повышению качества благоприятных перспектив. Наше дело не так однозначно, как может показаться: высокое качество позиционных исследований не даёт нам иного выбора, кроме определения глубокомысленных рассуждений. Являясь всего лишь частью общей картины, акционеры крупнейших компаний, превозмогая сложившуюся непростую экономическую ситуацию</p>
+                     <a href="#" class="leading-[164.9%] montserrat-semibold tracking-[.32px]">Василий</a>
+                  </div>
+                 </div>
+                 <div class="swiper-slide">
+                  <div class="min-[340px]:p-5 flex flex-col justify-between h-full p-2 rounded-2xl bg-currentGray xs:p-7">
+                     <p class="text-xs montserrat-normal leading-[164.9%] tracking-[.24px] pb-3.5 ">Повседневная практика показывает, что современная методология разработки способствует повышению качества благоприятных перспектив. Наше дело не так однозначно, как может показаться: высокое качество позиционных исследований не даёт нам иного выбора, кроме определения глубокомысленных рассуждений. </p>
+                     <a href="#" class="leading-[164.9%] montserrat-semibold tracking-[.32px]">Геннадий</a>
+                  </div>
+                 </div>
+                 <div class="swiper-slide">
+                  <div class="min-[340px]:p-5 flex flex-col justify-between h-full p-2 rounded-2xl bg-currentGray xs:p-7">
+                     <p class="text-xs montserrat-normal leading-[164.9%] tracking-[.24px] pb-3.5 ">Повседневная практика показывает, что современная методология разработки способствует повышению качества благоприятных перспектив. Наше дело не так однозначно, как может показаться: высокое качество позиционных исследований не даёт нам иного выбора, кроме определения глубокомысленных рассуждений. Являясь всего лишь частью общей картины, акционеры крупнейших компаний, превозмогая сложившуюся непростую экономическую ситуацию, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
+                     <a href="#" class="leading-[164.9%] montserrat-semibold tracking-[.32px]">Наталья</a>
+                  </div>
+                 </div>
+                 <div class="swiper-slide">
+                  <div class="min-[340px]:p-5 flex flex-col justify-between h-full p-2 rounded-2xl bg-currentGray xs:p-7">
+                     <p class="text-xs montserrat-normal leading-[164.9%] tracking-[.24px] pb-3.5 ">Повседневная практика показывает, что современная методология разработки способствует повышению качества благоприятных перспектив. Наше дело не так однозначно, как может показаться: высокое качество позиционных исследований не даёт нам иного выбора, кроме определения глубокомысленных рассуждений. Являясь всего лишь частью общей картины, акционеры крупнейших компаний, превозмогая сложившуюся непростую экономическую ситуацию, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
+                     <a href="#" class="leading-[164.9%] montserrat-semibold tracking-[.32px]">Наталья</a>
+                  </div>
+                 </div>
+                 <div class="swiper-slide">
+                  <div class="min-[340px]:p-5 flex flex-col justify-between h-full p-2 rounded-2xl bg-currentGray xs:p-7">
+                     <p class="text-xs montserrat-normal leading-[164.9%] tracking-[.24px] pb-3.5 ">Повседневная практика показывает, что современная методология разработки способствует повышению качества благоприятных перспектив. Наше дело не так однозначно, как может показаться: высокое качество позиционных исследований не даёт нам иного выбора, кроме определения глубокомысленных рассуждений. Являясь всего лишь частью общей картины, акционеры крупнейших компаний, превозмогая сложившуюся непростую экономическую ситуацию, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
+                     <a href="#" class="leading-[164.9%] montserrat-semibold tracking-[.32px]">Наталья</a>
+                  </div>
+                 </div>
+               </div>
+             </div>
+         </div>
+      </div>
+   </section>
   </div>
   <script src="./project/Js/index.js"></script>
   <script src="./project/plugins/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: 'horizontal',
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints:{
+         480:{
+            slidesPerView: 1.4,
+         },
+         640:{
+            slidesPerView: 1.8,
+         },
+         768:{
+            slidesPerView: 2,
+            spaceBetween: 40,
+         },
+         1024:{
+            slidesPerView: 2.6,
+            spaceBetween: 40,
+         },
+         1280:{
+            slidesPerView: 3,
+            spaceBetween: 40,
+         }
+      },
+    });
+  </script>
  </body>
 </html>

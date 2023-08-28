@@ -4,6 +4,7 @@ tailwind.config = {
     extend: {
       lineHeight: {
         '13': '133.4%',
+        '15': '151.4%',
       },
       dropShadow: {
         '3xl': '0px 10px 22px 0px rgba(147, 117, 81, 1)',
@@ -35,6 +36,7 @@ tailwind.config = {
       colors: {
         white: '#ffffff',
         currentBlue: '#19242F',
+        currentGray: '#F8F8F8',
         gold: '#DBC08D',
         lightBlue: '#19242F',
     },
