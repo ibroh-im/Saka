@@ -39,8 +39,11 @@ const accordionBtn = document.querySelector("#accordion-btn"),
  closeAccordion = document.querySelector("#close-accordion"),
  openAccordion = document.querySelector("#open-accordion");
 
-accordionBtn.addEventListener("click", () => {
- accordionContent.classList.toggle("show-accordion");
- openAccordion.classList.toggle("hide-dropdown");
- closeAccordion.classList.toggle("show-dropdown");
-});
+ function accordion (btn , content , openIcon , closeIcon) {
+   btn.addEventListener("click", () => {
+      content.classList.toggle("show-accordion")
+      openIcon.classList.toggle("hide-dropdown")
+      closeIcon.classList.toggle("show-dropdown")
+   })
+}
+accordion(accordionBtn, accordionContent, openAccordion, closeAccordion)
