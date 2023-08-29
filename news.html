@@ -14,13 +14,183 @@
 <body>
         
     <div class="wrapper">
-      <div class="container pt-6">
-        <div class="flex items-center gap-4 xs:gap-6">
-          <a href="index.html" class="text-currentBlue xs:text-[16px] text-[11px] tracking-[3px] montserrat-normal opacity-[0.25]">ГЛАВНАЯ</a>
-          <p class="text-currentBlue xs:text-[16px] text-[11px] montserrat-normal opacity-[0.25]">></p>
-          <p class="text-currentBlue xs:text-[16px] text-[11px] tracking-[3px] montserrat-normal opacity-[0.7]">НОВОСТИ И СТАТЬИ</p>
-
+      <nav class="relative z-10">
+        <div class="bg-currentBlue py-5 ">
+        <div class="container">
+          <div class="flex justify-between items-center text-white">
+            <div class="flex items-center gap-4 sm:gap-5">
+                <a href="#" title="Logo" class="w-[70px] h-9 xs:w-[86px] xs:h-[46px] sm:w-[120px] sm:h-[64px] block"><img src="./project/images/Navbar/Saka logo.png" alt="Logo" class="w-full h-full shrink-0"></a>
+                <div class="flex gap-[7px] items-center">
+                  <a href="#" title="Saka" class="w-[34px] h-[34px] sm:w-[48px] sm:h-[48px] block"><img src="./project/images/Navbar/Saka circle logo (3).png" alt="Saka" class="w-full h-full shrink-0"></a>
+                  <a href="#" title="Eros" class="w-[34px] h-[34px] sm:w-[48px] sm:h-[48px] block"><img src="./project/images/Navbar/Saka circle logo (2).png" alt="Eros" class="w-full h-full shrink-0"></a>
+                  <a href="#" title="Tor Tex" class="w-[34px] h-[34px] sm:w-[48px] sm:h-[48px] block"><img src="./project/images/Navbar/Saka circle logo (3).png" alt="Tor Tex" class="w-full h-full shrink-0"></a>
+                </div>
+                <p class="montserrat-light text-xs hidden lg:block max-w-[200px] xl:ml-8 ">Производитель турецкого трикотажного полотна</p>
+            </div>
+            <div class="items-center hidden lg:flex">
+                <a href="#" title="Cart" class="w-10 h-10 rounded-full flex justify-center items-center bg-[#FFFFFF0D] relative cursor-pointer">
+                  <img src="./project/images/Navbar/ShoppingCart.png" alt="Shopping Cart" class="w-5 h-5 shrink-0 text-white">
+                  <div class="px-1 rounded-full bg-[#BFA470] text-[10px] shrink-0 montserrat-medium leading-13 tracking-[.2px] absolute -top-[2px] -right-[2px]">3</div>
+                </a>
+                <a href="#" class="flex items-center gap-2.5 mx-7 xl:mr-9 xl:ml-8">
+                  <img src="./project/images/Navbar/User.png" alt="User Icon" class="w-4 h-4 shrink-0">
+                  <span class="text-xs montserrat-semibold leading-13 tracking-[.24px]">Войти</span>
+                </a>
+                <div class="relative mr-6 xl:mr-[48px]">
+                  <a href="tel:902125470826" class="flex items-center ">
+                      <img src="./project/images/Navbar/PhoneCall.png" alt="Phone Call" class="w-6 h-6 shrink-0 mr-1">
+                      <span class="text-xl montserrat-semibold leading-13 tracking-[.4px]">+90 212 547 08 26</span>
+                  </a>
+                  <a href="#" class="text-xs montserrat-light underline leading-13 tracking-[.24px] shrink-0 absolute right-0 -bottom-3">Заказать звонок</a>
+                </div>
+                <div class="text-xs montserrat-medium leading-13 tracking-[.24px] text-[#ffffff40]">
+                  <span class="text-white">RU </span>/
+                  <span class="">EN</span>
+                </div>
+            </div>
+            <div title="Menu" class=" w-8 h-8 lg:hidden block cursor-pointer" id="burger-btn"><img src="./project/images/Navbar/Burger nav.png" alt="Menu" class="w-full h-full shrink-0"></div>
+          </div>
         </div>
+        </div>
+        <div class="bg-lightBlue py-6 opacity-95 hidden lg:block ">
+          <div class="container">
+            <div class="flex justify-between items-center text-white ">
+                <a href="./index.html" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Главная</a>
+                <div class="flex gap-2.5 items-center">
+                  <a href="./catalog.html" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Каталог</a>
+                  <button class="" id="nav-dropdown">
+                      <i class="ri-arrow-down-s-line text-lg open-dropdown"></i>
+                      <i class="ri-arrow-up-s-line text-lg close-dropdown hide-dropdown"></i></button>
+                </div>
+                <a href="./About-us.html" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">О компании</a>
+                <a href="./news.html" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Новости</a>
+                <a href="./paymet-delivery.html" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Доставка и оплата</a>
+                <a href="./contact.html" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Контакты</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute w-[250px] left-[14%] top-[190px] hide-dropdown shadow-3xl z-[5]" id="dropdown-content">
+          <div class=" p-4 bg-currentBlue text-white rounded-lg  flex flex-col gap-5 border-4 border-[#091f3299] ">
+            <a href="#" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Links</a>
+            <a href="#" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Links</a>
+            <a href="#" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Links</a>
+          </div>
+        </div>
+        <div class="w-full h-screen fixed top-0 right-0 bg-[#19242fcc] hidden z-10" id="nav-banner"></div>
+        <div class="w-full min-[360px]:w-[340px] bg-currentBlue lg:hidden text-white h-screen overflow-y-scroll fixed top-0 right-[-350px] z-20 duration-500" id="nav-menu">
+          <div class="p-4 xs:p-6">
+            <div class="flex justify-between items-center mb-3.5">
+                <a href="./index.html" title="Logo Saka"><img src="./project/images/Navbar/Saka logo.png" alt="Logo Saka" class="w-[120px] h-[64px] shrink-0 object-contain"></a>
+                <button class="text-white text-3xl xs:text-4xl sm:text-5xl" id="close-btn"><i class="ri-close-line"></i></button>
+            </div>
+            <div class="flex items-center gap-1 mb-3.5">
+                <a href="#"><img src="./project/images/Navbar/Saka circle logo (3).png" alt="Saka Logo" class="w-[28px] h-[28px] shrink-0 object-contain"></a>
+                <a href="#"><img src="./project/images/Navbar/Saka circle logo (2).png" alt="Eros Logo" class="w-[28px] h-[28px] shrink-0 object-contain"></a>
+                <a href="#"><img src="./project/images/Navbar/Saka circle logo (1).png" alt="Tor Tex Logo" class="w-[28px] h-[28px] shrink-0 object-contain"></a>
+            </div>
+            <div class="flex justify-between items-end mb-[66px]">
+                <p class="montserrat-light leading-13 text-[10px] tracking-[0.2px] max-w-[150px]">Производитель турецкого трикотажного полотна</p>
+                <div class="text-xs montserrat-medium leading-13 tracking-[.24px] text-[#ffffff40]">
+                  <span class="text-white">RU </span>/
+                  <span class="">EN</span>
+                </div>
+            </div>
+            <ul class="flex flex-col gap-[28px] mb-[50px]">
+                <li>
+                  <a href="./index.html" class="montserrat-normal leading-13 tracking-[1.12px]">Главная</a>
+                </li>
+                <li class="">
+                  <div class="flex items-center gap-1.5">
+                      <a href="./catalog.html" class="montserrat-normal leading-13 tracking-[1.12px]">Каталог</a>
+                      <button class="flex" id="accordion-btn">
+                        <i class="ri-arrow-down-s-line text-xl" id="open-accordion"></i>
+                        <i class="ri-arrow-up-s-line text-xl hide-dropdown" id="close-accordion"></i>
+                      </button>
+                  </div>
+                  <div class="flex flex-col h-0 overflow-hidden duration-500 gap-2 mx-4" id="accordion-content">
+                      <a href="#" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Links</a>
+                      <a href="#" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Links</a>
+                      <a href="#" class="montserrat-normal text-sm leading-13 tracking-[0.98px] opacity-100">Links</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="./About-us.html" class="montserrat-normal leading-13 tracking-[1.12px]">О компании</a>
+                </li>
+                <li>
+                  <a href="./news.html" class="montserrat-normal leading-13 tracking-[1.12px]">Новости</a>
+                </li>
+                <li>
+                  <a href="./paymet-delivery.html" class="montserrat-normal leading-13 tracking-[1.12px]">Доставка и оплата</a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="montserrat-normal leading-13 tracking-[1.12px]">Контакты</a>
+                </li>
+            </ul>
+            <div>
+                <a href="tel:+90 212 547 08 26" class="mb-1 flex items-center">
+                  <img src="./project/images/Navbar/PhoneCall.png" alt="PhoneCall Icon" class="w-6 h-6 shrink-0 mr-1">
+                  <span class="text-xl montserrat-semibold leading-13 tracking-[.4px]">+90 212 547 08 26</span>
+                </a>
+                <a href="#" class="montserrat-light text-xs underline leading-13 tracking-[.24px] mt-[-2px] block">Заказать звонок</a>
+            </div>
+            <div class="flex items-center gap-8 mt-6">
+                <a href="#" title="Cart" class="w-10 h-10 rounded-full flex justify-center items-center bg-[#FFFFFF0D] relative">
+                  <img src="./project/images/Navbar/ShoppingCart.png" alt="Shopping Cart" class="w-5 h-5 shrink-0 text-white">
+                  <div class="px-1 rounded-full bg-[#BFA470] text-[10px] shrink-0 montserrat-medium leading-13 tracking-[.2px] absolute -top-[2px] -right-[2px]">3</div>
+                </a>
+                <a href="#" class="flex items-center gap-2.5 ">
+                  <img src="./project/images/Navbar/User.png" alt="User Icon" class="w-4 h-4 shrink-0">
+                  <span class="text-xs montserrat-semibold leading-13 tracking-[.24px]">Войти</span>
+                </a>
+            </div>
+          </div>
+          <div class="bg-gold py-3 px-8 montserrat-bold text-currentBlue text-sm leading-13 tracking-[.98px]">АКЦИИ</div>
+          <div class="px-6 xs:px-8 py-[30px] flex flex-col gap-[18px]">
+            <a href="#" class="flex items-center gap-2.5">
+                <img src="./project/images/Navbar/cloth Icon (1).png" alt="Cloth" class="w-6 h-6 shrink-0">
+                <span class="text-[10px] montserrat-semibold leading-13 tracking-[.7px]">Кулинарная гладь</span>
+            </a>
+            <a href="#" class="flex items-center gap-2.5">
+                <img src="./project/images/Navbar/cloth Icon (2).png" alt="Cloth" class="w-6 h-6 shrink-0">
+                <span class="text-[10px] montserrat-semibold leading-13 tracking-[.7px]">Футер</span>
+            </a>
+            <a href="#" class="flex items-center gap-2.5">
+                <img src="./project/images/Navbar/cloth Icon (9).png" alt="Cloth" class="w-6 h-6 shrink-0">
+                <span class="text-[10px] montserrat-semibold leading-13 tracking-[.7px]">Кашкорсе, рибана</span>
+            </a>
+            <a href="#" class="flex items-center gap-2.5">
+                <img src="./project/images/Navbar/cloth Icon (3).png" alt="Cloth" class="w-6 h-6 shrink-0">
+                <span class="text-[10px] montserrat-semibold leading-13 tracking-[.7px]">Пике</span>
+            </a>
+            <a href="#" class="flex items-center gap-2.5">
+                <img src="./project/images/Navbar/cloth Icon (4).png" alt="Cloth" class="w-6 h-6 shrink-0">
+                <span class="text-[10px] montserrat-semibold leading-13 tracking-[.7px]">Интерлок</span>
+            </a>
+            <a href="#" class="flex items-center gap-2.5">
+                <img src="./project/images/Navbar/cloth Icon (5).png" alt="Cloth" class="w-6 h-6 shrink-0">
+                <span class="text-[10px] montserrat-semibold leading-13 tracking-[.7px]">Капитоний</span>
+            </a>
+            <a href="#" class="flex items-center gap-2.5">
+                <img src="./project/images/Navbar/cloth Icon (6).png" alt="Cloth" class="w-6 h-6 shrink-0">
+                <span class="text-[10px] montserrat-semibold leading-13 tracking-[.7px]">Селаник</span>
+            </a>
+            <a href="#" class="flex items-center gap-2.5">
+                <img src="./project/images/Navbar/cloth Icon (7).png" alt="Cloth" class="w-6 h-6 shrink-0">
+                <span class="text-[10px] montserrat-semibold leading-13 tracking-[.7px]">Велюр</span>
+            </a>
+            <a href="#" class="flex items-center gap-2.5">
+                <img src="./project/images/Navbar/cloth Icon (8).png" alt="Cloth" class="w-6 h-6 shrink-0">
+                <span class="text-[10px] montserrat-semibold leading-13 tracking-[.7px]">Вискоза</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class=" mt-10 container">
+        <div class="Breadcrumb montserrat-normal leading-[151.4%] tracking-[2.64px] text-xs uppercase flex flex-wrap gap-x-5 gap-y-1 text-[#18272e40]">
+          <a href="./index.html">ГЛАВНАЯ</a>
+          <span>></span>
+          <a href="./news.html" class="text-currentBlue">НОВОСТИ И СТАТЬИ</a>
+       </div>
       </div>
       <header class="pt-10">
         <div class="container">
@@ -175,7 +345,7 @@
                         <div  class="flex justify-between flex-wrap w-full gap-3 md:gap-6 items-center">
                 
                             <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                                <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                                <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                               <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                               </svg>
@@ -190,7 +360,7 @@
                             </div>
                 
                             <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                              <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                              <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                               <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                               </svg>
@@ -205,7 +375,7 @@
                             </div>
                 
                             <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                              <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                              <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                               <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                               </svg>
@@ -220,7 +390,7 @@
                             </div>
                 
                             <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                              <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                              <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                               <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                               </svg>
@@ -235,7 +405,7 @@
                             </div>
                 
                             <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                              <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                              <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                               <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                               </svg>
@@ -250,7 +420,7 @@
                             </div>
                 
                             <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                              <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                              <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                               <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                               </svg>
@@ -270,7 +440,7 @@
                         <div class="flex justify-between flex-wrap w-full gap-3 md:gap-6 items-center">
                 
                             <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -285,7 +455,7 @@
                           </div>
                 
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -300,7 +470,7 @@
                           </div>
                 
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -315,7 +485,7 @@
                           </div>
                 
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -330,7 +500,7 @@
                           </div>
                 
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -345,7 +515,7 @@
                           </div>
                 
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -361,10 +531,10 @@
                       </div>   
                     </div>
                       <div class="content" id="contact">
-                        <div class="flex justify-between flex-wrap w-full gap-3 md:gap-6 items-center">
+                        <div  class="flex justify-between flex-wrap w-full gap-3 md:gap-6 items-center">
                 
-                            <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                          <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
+                              <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -377,9 +547,9 @@
                               <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                             </div>
                           </div>
-                
+              
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -392,9 +562,9 @@
                               <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                             </div>
                           </div>
-                
+              
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -407,9 +577,9 @@
                               <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                             </div>
                           </div>
-                
+              
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -422,9 +592,9 @@
                               <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                             </div>
                           </div>
-                
+              
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -437,9 +607,9 @@
                               <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                             </div>
                           </div>
-                
+              
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -453,107 +623,107 @@
                             </div>
                           </div>
                           
-                      </div>
+                      </div>    
                       </div>                    
                       <div class="content" id="about1">
                         <div class="flex justify-between flex-wrap w-full gap-3 md:gap-6 items-center">
                 
-                            <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
-                            </svg>
-                            </a>
-                            <img class="w-full" src="./project/images/article-page-section-2-2.png" alt="" />
-                            <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
-                              <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
-                                Пример текста <br> для заголовка статьи
-                              </p>
-                              <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
-                            </div>
-                          </div>
-                
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
-                            </svg>
-                            </a>
-                            <img class="w-full" src="./project/images/article-page-section-2-1.png" alt="" />
-                            <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
-                              <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
-                                Пример текста <br> для заголовка статьи
-                              </p>
-                              <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
-                            </div>
+                          <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
+                          </svg>
+                          </a>
+                          <img class="w-full" src="./project/images/article-page-section-2-2.png" alt="" />
+                          <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
+                            <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
+                              Пример текста <br> для заголовка статьи
+                            </p>
+                            <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                           </div>
-                
-                          <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
-                            </svg>
-                            </a>
-                            <img class="w-full" src="./project/images/article-page-section-2-4.png" alt="" />
-                            <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
-                              <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
-                                Пример текста <br> для заголовка статьи
-                              </p>
-                              <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
-                            </div>
+                        </div>
+              
+                        <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
+                          <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
+                          </svg>
+                          </a>
+                          <img class="w-full" src="./project/images/article-page-section-2-1.png" alt="" />
+                          <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
+                            <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
+                              Пример текста <br> для заголовка статьи
+                            </p>
+                            <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                           </div>
-                
-                          <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
-                            </svg>
-                            </a>
-                            <img class="w-full" src="./project/images/article-page-section-2-3.png" alt="" />
-                            <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
-                              <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
-                                Пример текста <br> для заголовка статьи
-                              </p>
-                              <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
-                            </div>
+                        </div>
+              
+                        <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
+                          <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
+                          </svg>
+                          </a>
+                          <img class="w-full" src="./project/images/article-page-section-2-4.png" alt="" />
+                          <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
+                            <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
+                              Пример текста <br> для заголовка статьи
+                            </p>
+                            <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                           </div>
-                
-                          <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
-                            </svg>
-                            </a>
-                            <img class="w-full" src="./project/images/article-page-section-2-6.png" alt="" />
-                            <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
-                              <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
-                                Пример текста <br> для заголовка статьи
-                              </p>
-                              <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
-                            </div>
+                        </div>
+              
+                        <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
+                          <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
+                          </svg>
+                          </a>
+                          <img class="w-full" src="./project/images/article-page-section-2-3.png" alt="" />
+                          <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
+                            <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
+                              Пример текста <br> для заголовка статьи
+                            </p>
+                            <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                           </div>
-                
-                          <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
-                            </svg>
-                            </a>
-                            <img class="w-full" src="./project/images/article-page-section-2-5.png" alt="" />
-                            <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
-                              <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
-                                Пример текста <br> для заголовка статьи
-                              </p>
-                              <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
-                            </div>
+                        </div>
+              
+                        <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
+                          <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
+                          </svg>
+                          </a>
+                          <img class="w-full" src="./project/images/article-page-section-2-6.png" alt="" />
+                          <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
+                            <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
+                              Пример текста <br> для заголовка статьи
+                            </p>
+                            <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                           </div>
-                      </div>
+                        </div>
+              
+                        <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
+                          <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
+                          </svg>
+                          </a>
+                          <img class="w-full" src="./project/images/article-page-section-2-5.png" alt="" />
+                          <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
+                            <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
+                              Пример текста <br> для заголовка статьи
+                            </p>
+                            <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
+                          </div>
+                        </div>
+                    </div>
                       </div>
                       <div class="content" id="contact1">
-                        <div class="flex justify-between flex-wrap w-full gap-3 md:gap-6 items-center">
+                        <div  class="flex justify-between flex-wrap w-full gap-3 md:gap-6 items-center">
                 
-                            <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                          <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
+                              <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -566,9 +736,9 @@
                               <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                             </div>
                           </div>
-                
+              
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -581,9 +751,9 @@
                               <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                             </div>
                           </div>
-                
+              
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -596,9 +766,9 @@
                               <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                             </div>
                           </div>
-                
+              
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -611,9 +781,9 @@
                               <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                             </div>
                           </div>
-                
+              
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -626,9 +796,9 @@
                               <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                             </div>
                           </div>
-                
+              
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
                             </svg>
@@ -642,108 +812,108 @@
                             </div>
                           </div>
                           
-                      </div>
+                      </div> 
                       </div>
                       <div class="content " id="contact2">
                         <div class="flex justify-between flex-wrap w-full gap-3 md:gap-6 items-center">
                 
-                            <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
-                            </svg>
-                            </a>
-                            <img class="w-full" src="./project/images/article-page-section-2-2.png" alt="" />
-                            <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
-                              <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
-                                Пример текста <br> для заголовка статьи
-                              </p>
-                              <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
-                            </div>
-                          </div>
-                
                           <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
-                            </svg>
-                            </a>
-                            <img class="w-full" src="./project/images/article-page-section-2-1.png" alt="" />
-                            <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
-                              <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
-                                Пример текста <br> для заголовка статьи
-                              </p>
-                              <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
-                            </div>
+                          <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
+                          </svg>
+                          </a>
+                          <img class="w-full" src="./project/images/article-page-section-2-2.png" alt="" />
+                          <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
+                            <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
+                              Пример текста <br> для заголовка статьи
+                            </p>
+                            <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                           </div>
-                
-                          <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
-                            </svg>
-                            </a>
-                            <img class="w-full" src="./project/images/article-page-section-2-4.png" alt="" />
-                            <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
-                              <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
-                                Пример текста <br> для заголовка статьи
-                              </p>
-                              <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
-                            </div>
+                        </div>
+              
+                        <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
+                          <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
+                          </svg>
+                          </a>
+                          <img class="w-full" src="./project/images/article-page-section-2-1.png" alt="" />
+                          <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
+                            <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
+                              Пример текста <br> для заголовка статьи
+                            </p>
+                            <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                           </div>
-                
-                          <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
-                            </svg>
-                            </a>
-                            <img class="w-full" src="./project/images/article-page-section-2-3.png" alt="" />
-                            <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
-                              <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
-                                Пример текста <br> для заголовка статьи
-                              </p>
-                              <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
-                            </div>
+                        </div>
+              
+                        <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
+                          <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
+                          </svg>
+                          </a>
+                          <img class="w-full" src="./project/images/article-page-section-2-4.png" alt="" />
+                          <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
+                            <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
+                              Пример текста <br> для заголовка статьи
+                            </p>
+                            <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                           </div>
-                
-                          <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
-                            </svg>
-                            </a>
-                            <img class="w-full" src="./project/images/article-page-section-2-6.png" alt="" />
-                            <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
-                              <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
-                                Пример текста <br> для заголовка статьи
-                              </p>
-                              <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
-                            </div>
+                        </div>
+              
+                        <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
+                          <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
+                          </svg>
+                          </a>
+                          <img class="w-full" src="./project/images/article-page-section-2-3.png" alt="" />
+                          <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
+                            <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
+                              Пример текста <br> для заголовка статьи
+                            </p>
+                            <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                           </div>
-                
-                          <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
-                            <a href="#" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
-                            </svg>
-                            </a>
-                            <img class="w-full" src="./project/images/article-page-section-2-5.png" alt="" />
-                            <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
-                              <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
-                                Пример текста <br> для заголовка статьи
-                              </p>
-                              <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
-                            </div>
+                        </div>
+              
+                        <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
+                          <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
+                          </svg>
+                          </a>
+                          <img class="w-full" src="./project/images/article-page-section-2-6.png" alt="" />
+                          <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
+                            <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
+                              Пример текста <br> для заголовка статьи
+                            </p>
+                            <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
                           </div>
-                      </div>        
+                        </div>
+              
+                        <div class="relative bg-[#F8F8F8] h-full w-full xs:w-[48%] lg:w-[31.5%]  rounded-[15px] ">
+                          <a href="article-page.html" class="absolute bottom-[20px] end-[30px] bg-gold rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M18.7499 5.99794C18.7498 5.97395 18.7486 5.94999 18.7463 5.92607C18.7452 5.91476 18.7431 5.90378 18.7415 5.89261C18.7396 5.87951 18.7381 5.86642 18.7355 5.85347C18.733 5.84079 18.7295 5.82852 18.7263 5.81607C18.7235 5.80481 18.721 5.7935 18.7176 5.78233C18.7139 5.77011 18.7094 5.75834 18.7051 5.7464C18.7011 5.73523 18.6975 5.72401 18.6929 5.71302C18.6883 5.70199 18.6829 5.69146 18.6779 5.6807C18.6725 5.66921 18.6674 5.65763 18.6613 5.64642C18.6559 5.6363 18.6498 5.62673 18.6439 5.61689C18.6373 5.60572 18.6309 5.59436 18.6236 5.58347C18.6165 5.57285 18.6086 5.56282 18.6009 5.55262C18.5939 5.54323 18.5874 5.53362 18.5799 5.52446C18.5659 5.50748 18.5511 5.49123 18.5357 5.47553C18.5338 5.4736 18.5322 5.47154 18.5303 5.46962C18.5282 5.46751 18.5258 5.46573 18.5237 5.46362C18.5082 5.44851 18.4922 5.43382 18.4755 5.42004C18.4665 5.41267 18.457 5.40622 18.4477 5.3993C18.4374 5.39157 18.4272 5.38355 18.4165 5.37632C18.4058 5.36918 18.3947 5.363 18.3838 5.35646C18.3737 5.35041 18.3638 5.3441 18.3535 5.33856C18.3426 5.33275 18.3314 5.32785 18.3203 5.32258C18.3092 5.31732 18.2982 5.31178 18.2868 5.30702C18.2763 5.30272 18.2657 5.29924 18.255 5.29544C18.2425 5.29091 18.2302 5.2861 18.2174 5.28225C18.2072 5.27914 18.1968 5.27694 18.1864 5.27429C18.173 5.27085 18.1598 5.26714 18.1461 5.26444C18.1348 5.2622 18.1233 5.26092 18.1119 5.25922C18.0991 5.2573 18.0865 5.25497 18.0735 5.25368C18.0546 5.25185 18.0356 5.25121 18.0166 5.2508C18.011 5.25073 18.0056 5.25 18 5.25H8.25002C8.0511 5.25 7.86034 5.32902 7.71969 5.46967C7.57904 5.61032 7.50002 5.80109 7.50002 6C7.50002 6.19891 7.57904 6.38968 7.71969 6.53033C7.86034 6.67098 8.0511 6.75 8.25002 6.75H16.1893L5.4697 17.4696C5.32904 17.6103 5.25001 17.8011 5.25 18C5.24999 18.1989 5.329 18.3897 5.46965 18.5303C5.6103 18.671 5.80107 18.75 5.99998 18.75C6.1989 18.75 6.38967 18.671 6.53034 18.5304L17.25 7.81069V15.75C17.25 15.9489 17.329 16.1397 17.4697 16.2803C17.6103 16.421 17.8011 16.5 18 16.5C18.1989 16.5 18.3897 16.421 18.5303 16.2803C18.671 16.1397 18.75 15.9489 18.75 15.75V6L18.7499 5.99794Z" fill="#19242F"/>
+                          </svg>
+                          </a>
+                          <img class="w-full" src="./project/images/article-page-section-2-5.png" alt="" />
+                          <div class="pb-4 md:pb-6 px-4 md:px-6 lg:px-8 lg:pb-8">
+                            <p class="montserrat-semibold mt-6 text-[20px] xs:text-[15px] md:text-[16px]   text-currentBlue">
+                              Пример текста <br> для заголовка статьи
+                            </p>
+                            <p class="text-currentBlue text-[12px] montserrat-semibold mt-4">31.03.2022</p>
+                          </div>
+                        </div>
+                    </div>        
                       </div>
                     </div>
                   </div>
             </div>
         </section>
 
-        <footer class="bg-currentBlue mt-4 py-6">
+        <footer class="bg-currentBlue py-6">
           <div class="container">
             <div class="flex flex-wrap w-full gap-6">
               <div class="w-full sm:w-[30%] lg:w-[17%]">
@@ -754,40 +924,40 @@
               <div class="w-full sm:w-[30%] lg:w-[17%]">
                 <p class="text-white mt-4 montserrat-semibold">Навигация</p>
                 <ul class="my-4">
-                  <li><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[24px]">Каталог</a></li>
-                  <li><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[24px]">О компании</a></li>
-                  <li><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[24px]">Новости</a></li>
-                  <li><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[24px]">Доставка и оплата</a></li>
-                  <li><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[24px]">Контакты</a></li>
-                  <li><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[24px]">Каталог</a></li>
+                  <li class="leading-15"><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[30px]">Каталог</a></li>
+                  <li class="leading-15"><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[30px]">О компании</a></li>
+                  <li class="leading-15"><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[30px]">Новости</a></li>
+                  <li class="leading-15"><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[30px]">Доставка и оплата</a></li>
+                  <li class="leading-15"><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[30px]">Контакты</a></li>
+                  <li class="leading-15"><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[30px]">Каталог</a></li>
                 </ul>
               </div>
               <div class="w-full sm:w-[30%] lg:w-[17%]">
                 <p class="text-white mt-4 montserrat-semibold">Информация</p>
                 <ul class="my-4">
-                  <li><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[24px]">Помощь</a></li>
-                  <li><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[24px]">Блог</a></li>
-                  <li><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[24px]">Вопрос-ответ</a></li>
-                  <li><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[24px]">Политика конфиденциальности</a></li>
-                  <li><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[24px]">Карта сайта</a></li>
+                  <li class="leading-15"><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[30px]">Помощь</a></li>
+                  <li class="leading-15"><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[30px]">Блог</a></li>
+                  <li class="leading-15"><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[30px]">Вопрос-ответ</a></li>
+                  <li class="leading-15"><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[30px]">Политика конфиденциальности</a></li>
+                  <li class="leading-15"><a href="#" class="montserrat-normal text-[14px] text-white opacity-[0.9] leading-[30px]">Карта сайта</a></li>
                 </ul>
               </div>
               <div class="w-full lg:w-[40%]">
                 <p class="text-white mt-4 montserrat-semibold">Следите за новостями</p>
-                 <div class="relative mt-4 w-full">
+                <div class="relative mt-4 w-full">
                   <input type="email" placeholder="Ваш E-mail" class="rounded-full text-white opacity-[0.7] input-bg p-4 px-6 w-full">
                   <button class="absolute end-0 top-0  montserrat-semibold text-[14x] bg-gold px-6 py-4 rounded-full ">Отправить</button>
-                 </div>
-                 <div class="flex justify-start items-center mt-8 lg:justify-end ">
-                  <a href="#">
+                </div>
+                <div class="flex justify-start items-center mt-8 lg:justify-end ">
+                  <a href="tel:+998 97 780 15 67 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path d="M20.8098 14.8525L16.4188 12.9706C16.1895 12.8719 15.9392 12.8322 15.6907 12.855C15.4421 12.8779 15.2032 12.9626 14.9958 13.1014L12.648 14.6664C11.2131 13.9685 10.0518 12.8123 9.34753 11.3805L9.34771 11.3803L10.9072 8.99734C11.043 8.79047 11.1253 8.55318 11.1469 8.30669C11.1685 8.0602 11.1287 7.8122 11.031 7.58487L9.1474 3.19006C9.01918 2.89174 8.79778 2.64298 8.51635 2.48103C8.23492 2.31907 7.9086 2.25263 7.58624 2.29166C6.31956 2.45452 5.15548 3.07296 4.31148 4.03144C3.46749 4.98992 3.00129 6.22289 3 7.5C3 14.944 9.05603 21 16.5 21C17.7771 20.9987 19.0101 20.5325 19.9686 19.6885C20.9271 18.8445 21.5455 17.6804 21.7083 16.4137C21.7473 16.0913 21.6808 15.765 21.5188 15.4836C21.3568 15.2022 21.1081 14.9808 20.8098 14.8525Z" fill="#BFA470"/>
                       <path d="M14.7517 4.47461C15.8959 4.78227 16.9392 5.38521 17.777 6.22304C18.6148 7.06086 19.2178 8.10413 19.5255 9.24835C19.5771 9.44014 19.7028 9.60359 19.8749 9.70283C20.0469 9.80208 20.2513 9.82901 20.4432 9.77773C20.6351 9.72645 20.7988 9.60113 20.8984 9.42928C20.9981 9.25743 21.0254 9.05309 20.9746 8.86108C20.5984 7.46236 19.8614 6.18703 18.8372 5.16285C17.813 4.13868 16.5377 3.40162 15.139 3.02551C14.947 2.97463 14.7426 3.002 14.5708 3.10161C14.3989 3.20122 14.2736 3.36494 14.2223 3.55683C14.171 3.74873 14.198 3.95313 14.2972 4.12519C14.3965 4.29725 14.5599 4.42291 14.7517 4.4746L14.7517 4.47461Z" fill="#BFA470"/>
                       <path d="M13.9751 7.37304C14.6107 7.54397 15.1903 7.87892 15.6557 8.34435C16.1211 8.80978 16.4561 9.38933 16.627 10.025C16.6787 10.2167 16.8043 10.3802 16.9764 10.4794C17.1485 10.5787 17.3529 10.6056 17.5448 10.5543C17.7367 10.5031 17.9004 10.3777 18 10.2059C18.0996 10.034 18.127 9.8297 18.0761 9.63769C17.8367 8.74754 17.3677 7.93592 16.7159 7.28413C16.0641 6.63235 15.2525 6.16329 14.3623 5.92395C14.1703 5.87307 13.966 5.90044 13.7941 6.00005C13.6223 6.09966 13.497 6.26337 13.4457 6.45527C13.3944 6.64717 13.4213 6.85157 13.5206 7.02363C13.6198 7.19569 13.7833 7.32135 13.9751 7.37304L13.9751 7.37304Z" fill="#BFA470"/>
                       </svg>
                   </a>
-                   <a href="tel:+998 97 780 15 67 " class="text-white  montserrat-semibold text-start inline-block lg:text-end">+998 97 780 15 67</a>
-                 </div>
+                  <a href="tel:+998 97 780 15 67 " class="text-white  montserrat-semibold text-start inline-block lg:text-end">+998 97 780 15 67</a>
+                </div>
               </div>
             </div>
 
@@ -847,27 +1017,7 @@
         </footer>
     </div>
 
-    <script>
-        const tabs = document.querySelector(".wrapper");
-const tabButton = document.querySelectorAll(".tab-button");
-const contents = document.querySelectorAll(".content");
 
-tabs.onclick = e => {
-  const id = e.target.dataset.id;
-  if (id) {
-    tabButton.forEach(btn => {
-      btn.classList.remove("active");
-    });
-    e.target.classList.add("active");
-
-    contents.forEach(content => {
-      content.classList.remove("active");
-    });
-    const element = document.getElementById(id);
-    element.classList.add("active");
-  }
-}
-    </script>
         <script src="./project/js/ibrohim-js.js"></script>
         <script src="./project/plugins/swiper/swiper-bundle.min.js"></script>
     </body>
