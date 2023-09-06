@@ -123,3 +123,16 @@ button.active {
 .contact-p{
   color: rgba(25, 36, 47, 0.50);
 }
+.bgg{
+  background:  rgba(255, 255, 255, 0.05);
+}
+
+.scrol-tab {
+  overflow-x: scroll;
+  width: 100px;
+  height: 100px;
+}
+.kg{
+  margin-bottom: 0 !important;
+  margin-top: 9px;
+}

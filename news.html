@@ -185,7 +185,7 @@
           </div>
         </div>
       </nav>
-      <div class=" mt-10 container">
+      <div class="container pt-10">
         <div class="Breadcrumb montserrat-normal leading-[151.4%] tracking-[2.64px] text-xs uppercase flex flex-wrap gap-x-5 gap-y-1 text-[#18272e40]">
           <a href="./index.html">ГЛАВНАЯ</a>
           <span>></span>
@@ -944,10 +944,10 @@
               </div>
               <div class="w-full lg:w-[40%]">
                 <p class="text-white mt-4 montserrat-semibold">Следите за новостями</p>
-                <div class="relative mt-4 w-full">
+                <form class="relative mt-4 w-full">
                   <input type="email" placeholder="Ваш E-mail" class="rounded-full text-white opacity-[0.7] input-bg p-4 px-6 w-full">
                   <button class="absolute end-0 top-0  montserrat-semibold text-[14x] bg-gold px-6 py-4 rounded-full ">Отправить</button>
-                </div>
+                </form>
                 <div class="flex justify-start items-center mt-8 lg:justify-end ">
                   <a href="tel:+998 97 780 15 67 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1016,9 +1016,88 @@
           </div>
         </footer>
     </div>
-
-
-        <script src="./project/js/ibrohim-js.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper-1", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next-1",
+          prevEl: ".swiper-button-prev-1",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+          },
+        
+        mousewheel: true,
+        keyboard: true,
+      });
+        </script>
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            
+            pagination: {
+              el: ".swiper-pagination",
+              type: "fraction",
+            },
+            
+          });
+        </script>
+        <script>
+          var swiper = new Swiper(".mySwiper-2", {
+            direction: 'horizontal',
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+              nextEl: ".swiper-button-next-2",
+              prevEl: ".swiper-button-prev-2",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              type: "progressbar",
+            },
+            breakpoints:{
+              480:{
+                  slidesPerView: 1,
+              },
+              640:{
+                  slidesPerView: 2,
+              },
+              1024:{
+                  slidesPerView: 3.4,
+              },
+            },
+          });
+        </script>
+        <script>
+          var swiper = new Swiper(".mySwiper-4", {
+            direction: 'horizontal',
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+              nextEl: ".swiper-button-next-1",
+              prevEl: ".swiper-button-prev-1",
+            },
+            breakpoints:{
+              480:{
+                  slidesPerView: 1,
+              },
+              640:{
+                  slidesPerView: 2,
+              },
+              1024:{
+                  slidesPerView: 4,
+              },
+            },
+          });
+        </script>
+        <script src="./project/Js/index.js"></script>
         <script src="./project/plugins/swiper/swiper-bundle.min.js"></script>
     </body>
 </html>
