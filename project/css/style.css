@@ -136,3 +136,29 @@ button.active {
   margin-bottom: 0 !important;
   margin-top: 9px;
 }
+
+/* ibrohim home page */
+
+.swiper-header .swiper-pagination {
+  color: white !important;
+  margin-top: 0!important;
+  width: auto !important;
+}
+.swiper-pagination-header .swiper-pagintation-bullet {
+  transition: all .4s ease;
+  width: 30px;
+  height:3px ;
+  border-radius: 5px;
+  display: block ;
+  background: white ;
+}  
+.swiper-pagination-header .swiper-pagintation-bullet-active {
+  background: #DBC08D ;
+}
+.color-swiper .swiper-pagintation-bullet-active{
+  background: #DBC08D !important;
+}
+.img-car {
+  margin-bottom: 0 !important;
+}
+/* ibrohim home page */

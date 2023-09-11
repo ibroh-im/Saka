@@ -185,7 +185,7 @@
             </div>
           </nav>
 
-          <header class="pt-10">
+          <header class="pt-10 swiper-header">
             <div class="container">
               <div class="bg-currentBlue lg:index-header-bg  relative rounded-[15px] h-[630px] xs:h-[630px] lg:h-full p-8 xs:p-10 sm:p-12 lg:p-20 ">
               <div class="w-full md:w-[60%] xl:w-[41%]">
@@ -206,6 +206,17 @@
                                     </svg>    
                                 </div>
                             </button>
+                            <div class="flex items-center gap-4">
+
+                              <div class="swiper-pagination-header flex gap-6 items-center ">
+                                <span class="swiper-pagintation-bullet swiper-pagintation-bullet-active"></span>
+                                <span class="swiper-pagintation-bullet"></span>
+                                <span class="swiper-pagintation-bullet"></span>
+                                <span class="swiper-pagintation-bullet"></span>
+                                <span class="swiper-pagintation-bullet"></span>
+                              </div>
+                              <div class="swiper-pagination md:mt-12 sticky"></div>
+                            </div>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -257,7 +268,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-pagination md:mt-12"></div>
+                
                 </div> 
               </div>
                 
@@ -1068,7 +1079,9 @@
         </script>
         <script>
           var swiper = new Swiper(".mySwiper", {
-            
+            pagination: {
+              el: ".swiper-pagination-header",
+            },
             pagination: {
               el: ".swiper-pagination",
               type: "fraction",
