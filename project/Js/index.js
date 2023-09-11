@@ -42,11 +42,55 @@ navBanner.addEventListener("click", (e) => {
       document.body.style.overflow = "";
    }
 });
+function cartalogAccor (btn, arrow, content) {
+  btn.addEventListener('click', () => {
+    content.classList.toggle('hidden')
+    arrow.classList.toggle('ri-arrow-right-s-line')
+    arrow.classList.toggle('ri-arrow-down-s-line')
+  })
+}
+cartalogAccor(
+  document.querySelector('.catalog-accordion-1'),
+  document.querySelector('.catalog-accordion-arrow-1'),
+  document.querySelector('.catalog-accordion-content-1')
+  )
+cartalogAccor(
+    document.querySelector('.catalog-accordion-2'),
+    document.querySelector('.catalog-accordion-arrow-2'),
+    document.querySelector('.catalog-accordion-content-2')
+  )
+cartalogAccor(
+  document.querySelector('.catalog-accordion-3'),
+  document.querySelector('.catalog-accordion-arrow-3'),
+  document.querySelector('.catalog-accordion-content-3')
+)
+cartalogAccor(
+  document.querySelector('.catalog-accordion-4'),
+  document.querySelector('.catalog-accordion-arrow-4'),
+  document.querySelector('.catalog-accordion-content-4')
+)
+const filterBtn = document.querySelector('.filter-catalog'),
+    filterContent = document.querySelector('.filter-catalog-content')
 
+filterBtn.addEventListener('click' , () => {
+  filterContent.classList.toggle('hidden')
+  filterContent.classList.remove('md:block')
+})
 dropdown(dropdownNav, dropdownContent, openDropdownIcon, closeDropdownIcon);
 accordion(accordionBtn, accordionContent, openAccordion, closeAccordion)
 
-
+//catalog
+const dropdownCatalog = document.querySelector('.dropdown-catalog'),
+  catalogContent = document.querySelector('.content-catalog'),
+  catalogOpen = document.querySelector('.open-catalog'),
+  catalogClose = document.querySelector('.close-catalog')
+dropdown(dropdownCatalog, catalogContent, catalogOpen, catalogClose)
+dropdown(
+  document.querySelector('.dropdown-catalog-2'),
+  document.querySelector('.content-catalog-2'),
+  document.querySelector('.open-catalog-2'),
+  document.querySelector('.close-catalog-2')
+  )
 // ibrohim
 // tabs
 const tabs = document.querySelector(".wrapper");
@@ -69,3 +113,4 @@ tabs.onclick = e => {
   }
 }
 // tabs
+

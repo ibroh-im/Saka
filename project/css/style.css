@@ -90,6 +90,34 @@
   height: 100px !important;
   padding: 20px 0;
 }
+/* catalog range input*/
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  height: 2px;
+  cursor: pointer;
+  background: #DBDBDB;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background: #DBC08D;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+
+/* Track: Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+}
+
+/* catalog range input*/
 /* ibrohim */
 .bg-liner{
   background: linear-gradient(338deg, rgba(255, 255, 255, 0.02) 0%, rgba(25, 36, 47, 0.00) 100%), #19242F;
