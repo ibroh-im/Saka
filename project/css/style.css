@@ -116,7 +116,9 @@ input[type="range"]::-moz-range-track {
   background: #ccc;
   border-radius: 16px;
 }
-
+.personal-area::-webkit-scrollbar , .calculator::-webkit-scrollbar{
+  display: none;
+}
 /* catalog range input*/
 /* ibrohim */
 .bg-liner{
